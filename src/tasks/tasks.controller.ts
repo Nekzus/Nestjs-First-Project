@@ -18,6 +18,7 @@ export class TasksController {
 
   @Post()
   createTask(@Body() task: CreateTaskDto): string {
+    console.log(task);
     return 'Creating a task...';
   }
 
